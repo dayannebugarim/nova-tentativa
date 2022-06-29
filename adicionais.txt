@@ -1,0 +1,7 @@
+npm install --save react
+
+npm install --save react-dom
+
+
+npx create-react-app front-end
+
