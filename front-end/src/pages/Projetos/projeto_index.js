@@ -3,13 +3,13 @@ import Card from "../../components/Card"
 import NewProject from '../../assets/icons/new.svg'
 import filter from '../../assets/icons/filter.svg'
 
-function ProjetosGeral() {
+function ProjetoIndex() {
     return (
         <>
             <main className='col-11 offset-1 col-lg-11 offset-lg-1 px-5'>
                 <Header />
 
-                <div className="Options row align-items-center my-lg-4">
+                <div className="Options row my-lg-4">
                     <div className="LeftOptions col-lg-2 mt-sm-2">
                         <span className="me-2">Show:</span>
                         <input type="" name="txt-show" id="txt-show" size="1"/>
@@ -45,4 +45,4 @@ function ProjetosGeral() {
     )
 }
 
-export default ProjetosGeral
+export default ProjetoIndex
