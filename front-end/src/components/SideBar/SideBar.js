@@ -1,31 +1,36 @@
 //import './SideBar.modules.css'
+import { Link } from "react-router-dom";
+import logo from '../../assets/logo.svg'
+import home from '../../assets/icons/home.svg'
+import project from '../../assets/icons/project.svg'
+import team from '../../assets/icons/team.svg'
+import person from '../../assets/icons/person.svg'
 
 function SideBar() {
     return(
         <>
             <header className="col-1 col-lg-1 d-flex flex-column justify-content-center">
-                <img className="logo mb-5" src="../assets/logo.svg" alt=""/>
+                <img className="logo mb-5" src={logo}/>
             <ul className="nav flex-column align-items-center">
                 <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                    a
-                    <img className="img-fluid" src="../assets/icons/home-active.svg" alt=""/>
-                </a>
+                <Link to="/">
+                    <img src={home}/>
+                </Link>               
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">
-                    <img className="img-fluid" src="../assets/icons/project.svg" alt=""/>
-                </a>
+                <Link to="/projetos">
+                    <img src={project}/>
+                </Link>  
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">
-                    <img className="img-fluid" src="../assets/icons/team.svg" alt=""/>
-                </a>
+                <Link to="/equipes">
+                    <img src={team}/>
+                </Link>  
                 </li>
                 <li className="nav-item">
-                <a className="nav-link">
-                    <img className="img-fluid" src="../assets/icons/task.svg" alt=""/>
-                </a>
+                <Link to="/pessoas">
+                    <img src={person}/>
+                </Link>  
                 </li>
             </ul>
             </header>

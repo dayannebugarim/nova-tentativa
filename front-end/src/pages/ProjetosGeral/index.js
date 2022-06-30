@@ -9,17 +9,17 @@ function ProjetosGeral() {
                     <input className="col-lg-3 offset-lg-6" type="search" name="main-search" id="main-search" placeholder="Search here..."/>
                 </div>
 
-                <div className="options row align-items-center my-lg-4">
-                    <div className="col-lg-2 option-col">
-                        <span>Show:</span>
+                <div className="Options row align-items-center my-lg-4">
+                    <div className="LeftOptions col-lg-2 mt-sm-2">
+                        <span className="me-2">Show:</span>
                         <input type="" name="txt-show" id="txt-show" size="1"/>
                     </div>
-                    <div className="right-options col-lg-2 offset-lg-8">
+                    <div className="RightOptions col-lg-2 offset-lg-8 mt-sm-2">
                         <button className="new-project me-3">
                         <img src="../assets/icons/new.svg" alt=""/>
                         </button>
                         
-                        <select className="me-3" name="order-select" id="order-select">
+                        <select className="ps-1 me-3" name="order-select" id="order-select">
                         <option value="crescente">A - Z</option>
                         <option value="decrescente">Z - A</option>
                         </select>

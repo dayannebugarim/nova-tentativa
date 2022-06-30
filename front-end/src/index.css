@@ -91,6 +91,7 @@ body {
 #main-search:focus {
     /*margin-left: 1px;*/
 }
+
 main h1 {
     color: var(--laranja);
 }
@@ -103,16 +104,11 @@ main h1 {
     border-bottom: 0.15px solid #2C2E3B;
 }
 
-.options {
-    /*border: 1px solid white;*/
+.Options {
+    border: 1px solid white;
 }
 
-.options .col > * {
-    /*height: 32px;*/
-    
-}
-
-.option-col > span {
+.LeftOptions > span {
     color: var(--cinza);
 }
 
