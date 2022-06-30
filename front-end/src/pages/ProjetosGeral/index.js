@@ -1,0 +1,48 @@
+import Card from "../../components/Card"
+
+function ProjetosGeral() {
+    return (
+        <>
+            <main className='col-11 offset-1 col-lg-11 offset-lg-1 px-5'>
+                <div className='row mt-5 pb-3 main-header'>
+                    <h1 className="col-lg-3 fs-2">Projetos</h1>
+                    <input className="col-lg-3 offset-lg-6" type="search" name="main-search" id="main-search" placeholder="Search here..."/>
+                </div>
+
+                <div className="options row align-items-center my-lg-4">
+                    <div className="col-lg-2 option-col">
+                        <span>Show:</span>
+                        <input type="" name="txt-show" id="txt-show" size="1"/>
+                    </div>
+                    <div className="right-options col-lg-2 offset-lg-8">
+                        <button className="new-project me-3">
+                        <img src="../assets/icons/new.svg" alt=""/>
+                        </button>
+                        
+                        <select className="me-3" name="order-select" id="order-select">
+                        <option value="crescente">A - Z</option>
+                        <option value="decrescente">Z - A</option>
+                        </select>
+
+                        <button className="filter px-2 py-1">
+                        <span>Filter</span> <img src="./assets/icons/settings-sliders 1.svg" alt=""/>
+                        </button>
+                    </div>
+                </div>
+
+                <div className="row CardsContainer my-4">
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+
+            </main>
+        </>
+    )
+}
+
+export default ProjetosGeral
