@@ -1,5 +1,5 @@
 # nova-tentativa
-<p>Implementando o Front da API (talvez) do jeito certo</p>
+<p>Implementando o Front da API com React e Bootstrap (talvez) do jeito certo</p>
 <br>
 <p><strong>Componentes:</strong></p>
 <ul>
