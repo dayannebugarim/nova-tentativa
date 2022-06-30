@@ -1,4 +1,6 @@
 import Card from "../../components/Card"
+import NewProject from '../../assets/icons/new.svg'
+import filter from '../../assets/icons/filter.svg'
 
 function ProjetosGeral() {
     return (
@@ -16,7 +18,7 @@ function ProjetosGeral() {
                     </div>
                     <div className="RightOptions col-lg-2 offset-lg-8 mt-sm-2">
                         <button className="new-project me-3">
-                        <img src="../assets/icons/new.svg" alt=""/>
+                        <img src={NewProject}/>
                         </button>
                         
                         <select className="ps-1 me-3" name="order-select" id="order-select">
@@ -25,7 +27,7 @@ function ProjetosGeral() {
                         </select>
 
                         <button className="filter px-2 py-1">
-                        <span>Filter</span> <img src="./assets/icons/settings-sliders 1.svg" alt=""/>
+                        <span>Filter</span> <img src={filter}/>
                         </button>
                     </div>
                 </div>
